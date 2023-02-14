@@ -89,3 +89,9 @@ def setup(app):
     app.add_config_value('lunrsearch_highlight', True, 'html')
 
     sphinx.search.IndexBuilder = IndexBuilder
+
+    return {
+         "version": __version__.VERSION,
+         "parallel_read_safe": True,
+         "parallel_write_safe": True,
+    }
