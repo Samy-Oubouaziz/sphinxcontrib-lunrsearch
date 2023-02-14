@@ -91,7 +91,6 @@ def setup(app):
     sphinx.search.IndexBuilder = IndexBuilder
 
     return {
-         "version": __version__.VERSION,
          "parallel_read_safe": True,
          "parallel_write_safe": True,
     }
